@@ -1,6 +1,6 @@
 //
-//  AssertYourselfTests.swift
-//  AssertYourselfTests
+//  AssertYourselfUITests.swift
+//  AssertYourselfUITests
 //
 //  Created by Rafael Nunes Rios on 4/5/21.
 //
