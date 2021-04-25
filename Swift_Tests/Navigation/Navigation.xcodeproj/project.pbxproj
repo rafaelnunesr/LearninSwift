@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B651EF72632FA6C00B626AD /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B651EF62632FA6C00B626AD /* TestHelpers.swift */; };
 		1BB5C7A4262D0644006EFF01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5C7A3262D0644006EFF01 /* AppDelegate.swift */; };
 		1BB5C7A6262D0645006EFF01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5C7A5262D0645006EFF01 /* SceneDelegate.swift */; };
 		1BB5C7A8262D0645006EFF01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5C7A7262D0645006EFF01 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 		1BB5C7C6262D0646006EFF01 /* NavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5C7C5262D0646006EFF01 /* NavigationUITests.swift */; };
 		1BB5C7DA262D0C63006EFF01 /* CodeNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5C7D9262D0C63006EFF01 /* CodeNextViewController.swift */; };
 		1BB5C7DF262D0FE1006EFF01 /* SegueNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5C7DE262D0FE1006EFF01 /* SegueNextViewController.swift */; };
+		1BFA04D52631AAB300C8AE08 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA04D42631AAB300C8AE08 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B651EF62632FA6C00B626AD /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		1BB5C7A0262D0644006EFF01 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB5C7A3262D0644006EFF01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BB5C7A5262D0645006EFF01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		1BB5C7C7262D0646006EFF01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BB5C7D9262D0C63006EFF01 /* CodeNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeNextViewController.swift; sourceTree = "<group>"; };
 		1BB5C7DE262D0FE1006EFF01 /* SegueNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueNextViewController.swift; sourceTree = "<group>"; };
+		1BFA04D42631AAB300C8AE08 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				1BB5C7BC262D0646006EFF01 /* Info.plist */,
+				1BFA04D42631AAB300C8AE08 /* ViewControllerTests.swift */,
+				1B651EF62632FA6C00B626AD /* TestHelpers.swift */,
 			);
 			path = NavigationTests;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 					};
 					1BB5C7B5262D0646006EFF01 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 1BB5C79F262D0644006EFF01;
 					};
 					1BB5C7C0262D0646006EFF01 = {
@@ -273,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BFA04D52631AAB300C8AE08 /* ViewControllerTests.swift in Sources */,
+				1B651EF72632FA6C00B626AD /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +485,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NavigationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -486,6 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafa.NavigationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Navigation.app/Navigation";
@@ -497,6 +508,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NavigationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;

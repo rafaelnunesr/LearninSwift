@@ -17,6 +17,4 @@ class SegueNextViewController: UIViewController {
         super.viewDidLoad()
         self.label.text = self.labelText
     }
-    
-
 }
